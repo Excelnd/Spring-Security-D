@@ -28,6 +28,14 @@
 	
 	<hr>
 	
+	<!--  Add a link to point to /leaders ... this is for managers  -->
+	<p>
+		<a href="${pageContext.request.contextPath}/leaders">LeaderShip Meeting</a>
+		(Only for Manager Peeps)
+	</p>
+	
+	<hr>
+	
 	<!--  Add a logout button -->
 	<form:form action="${pageContext.request.contextPath}/logout"
 			   method="POST">
