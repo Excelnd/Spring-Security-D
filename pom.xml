@@ -26,6 +26,11 @@
 			<version>${springframework.version}</version>
 		</dependency>
 		
+		<dependency>
+		  <groupId>org.springframework.security</groupId>
+		  <artifactId>spring-security-taglibs</artifactId>
+		  <version>4.2.3.RELEASE</version> 
+		</dependency>		
 		<!--  Spring Security -->
 		<!--  Spring Security-web and spring-security-config -->		
 		<dependency>
@@ -50,7 +55,10 @@
 		  <groupId>org.springframework.security</groupId>
 		  <artifactId>spring-security-config</artifactId>
 		  <version>4.2.3.RELEASE</version> 
-		</dependency>					
+		</dependency>		
+		
+		
+						
 
 		<!-- Servlet, JSP and JSTL support -->
 		<dependency>
