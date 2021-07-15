@@ -18,7 +18,7 @@
 
 <h3>My Custom Login Page</h3>
 	
-	<form:form action="${pageContext.request.contextPath}/authenticateTheUser"
+	<form action="${pageContext.request.contextPath}/authenticateTheUser"
 			   method="POST">
 			   
 	    <!--  Check for login error -->
@@ -35,8 +35,12 @@
 		</p>		
 		
 		<input type="submit" value="Login" />
-			   
-	</form:form>
+		
+		<!--  manually adding tokens... -->
+		<input type="hidden"
+			   name="${_csrf.parameterName }"
+			   value="${_csrf.token }" /> 
+	</form>
 
 
 </body>
