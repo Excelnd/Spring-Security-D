@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>spring-security-dm-06-csrf</name>
+	<name>spring-security-dm-08-jdbc-plaintext</name>
 	<comment></comment>
 	<projects>
 	</projects>
