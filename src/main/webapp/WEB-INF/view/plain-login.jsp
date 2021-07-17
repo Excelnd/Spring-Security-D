@@ -1,6 +1,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -18,7 +19,7 @@
 
 <h3>My Custom Login Page</h3>
 	
-	<form action="${pageContext.request.contextPath}/authenticateTheUser"
+	<form:form action="${pageContext.request.contextPath}/authenticateTheUser"
 			   method="POST">
 			   
 	    <!--  Check for login error -->
@@ -37,10 +38,12 @@
 		<input type="submit" value="Login" />
 		
 		<!--  manually adding tokens... -->
-		<input type="hidden"
-			   name="${_csrf.parameterName }"
-			   value="${_csrf.token }" /> 
-	</form>
+	<!--	
+	   <input type="hidden"
+	   name="${_csrf.parameterName }"
+	   value="${_csrf.token }" />
+	-->
+	</form:form>
 
 
 </body>
